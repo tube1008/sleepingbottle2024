@@ -299,6 +299,51 @@ main section .shopInfo .infoWrap .container .choice .color .gray .gr {
 main section .shopInfo .infoWrap .container .choice .color .gray:hover .gr {
     display: block;
 }
+main section .shopInfo .infoWrap .container .productPrice {} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult {
+    background: #4f4f4f08;
+    padding: 15px;
+    display: grid;
+    grid-template-areas:
+        'group1 group1'
+        'group2 group3';
+    justify-content: space-between;
+    position: relative;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .optList {
+    grid-area: group1; margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .optList .opt {
+    padding: 10px;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .numResult {
+    grid-area: group2;
+    width: 60px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .numResult #minus {
+    border: 1px solid #ccc;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .numResult #numCount {
+    border: 1px solid #ccc;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .numResult #plus {
+    border: 1px solid #ccc;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .orderPrice {
+    grid-area: group3; text-align: right;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .shopClosebtn {
+    position: absolute; right: 13px; top: 10px;
+} 
+main section .shopInfo .infoWrap .container .productPrice .selectResult .shopClosebtn img {
+    width: 18px;
+} 
 main section .shopInfo .infoWrap .container .purchase .buy {
     display: flex; justify-content: space-between;
     margin: 40px 0 10px 0;
