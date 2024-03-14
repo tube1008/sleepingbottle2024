@@ -1,0 +1,98 @@
+main {}
+main .pressPage {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .pressPage .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .pressPage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .pressPage .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 230px;
+}
+main .pressPage .reportPage {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+main .pressPage .reportPage .report {
+    margin: 20px 0;
+    font-size: 0.875rem; color: #4f4f4f;
+}
+main .pressPage .reportPage .report em {
+    font-size: 0.75rem; color: #4f4f4f;
+}
+main .pressPage .reportPage .gnb {}
+main .pressPage .reportPage .gnb li {
+    border: 1px solid #e5e7eb; 
+    border-left: none; border-right: none;
+    padding: 15px 0;
+    display: flex; 
+}
+main .pressPage .reportPage .gnb li:nth-child(2) {border: none;}
+main .pressPage .reportPage .gnb li:nth-child(4) {border: none;}
+main .pressPage .reportPage .gnb li a {
+    display: flex;
+}
+main .pressPage .reportPage .gnb li a .thumimage {
+    margin-right: 15px; display: flex; align-items: center;
+}
+main .pressPage .reportPage .gnb li a .thumimage img {
+    height: 60px;
+}
+main .pressPage .reportPage .gnb li a .thumnail {}
+main .pressPage .reportPage .gnb li a .thumnail h2 {
+    font-size: 1.125rem; font-weight: 500;
+    color: #4f4f4f;
+}
+main .pressPage .reportPage .gnb li a .thumnail p {
+    font-size: 0.813rem;
+    color: #4f4f4f80;
+    padding: 10px 0;
+}
+main .pressPage .reportPage .gnb li a .thumnail span {
+    font-size: 0.813rem; 
+    color: #4f4f4fb3;
+}
+main .slidePage {
+    margin: 40px 0 150px 0;
+    position: relative; left: 50%;
+    transform: translateX(-50px);
+}
+main .slidePage .page {
+    display: flex; flex-flow: row nowrap;
+}
+main .slidePage .page .prev {margin-right: 15px;}
+main .slidePage .page .prev img {width: 13px;}
+main .slidePage .page .thumbPage {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+main .slidePage .page .thumbPage li {
+    display: flex; align-items: center;
+}
+main .slidePage .page .thumbPage li .number {
+    font-size: 0.875rem;
+    color: #4f4f4f66;
+    padding: 0 10px;
+}
+main .slidePage .page .thumbPage li .active {
+    background: #ddd;
+    width: 32px; height: 32px;
+    color: #fff;
+    border-radius: 50%;
+}
+main .slidePage .page .thumbPage li:nth-child(1) a {color: #4f4f4f;}
+main .slidePage .page .next {margin-left: 15px;}
+main .slidePage .page .next img {width: 13px;}
+

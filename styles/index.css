@@ -1,0 +1,463 @@
+/* main */
+main {
+    max-width: 1920px; margin: 0 auto;
+}
+main .productPage {
+    width: 100%; overflow-x: hidden;
+}
+main .productPage #slide {
+    width: 100%; 
+    position: relative;
+}
+main .productPage #slide .pageWrapper {
+    height: 80%;
+}
+main .productPage #slide .pageWrapper .swiper-slide{
+    height: auto;
+}
+/* section-1 */
+/* slide01 */
+main .productPage #slide .pageWrapper .selectSlide01 {
+    display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #ebeaea;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left {
+    width: 30%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    text-align: center;
+    margin-right: 100px;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left h1 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.5rem; font-weight: 600;
+    color: #3e7352;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left .txt01 {
+    font-size: 1.25rem; font-weight: 600;
+    color: #3e7352;
+    padding: 60px 0 40px 0;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left .txt02 {
+    font-size: 1rem; 
+    color: #3e7352;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left .shopBtn {
+    font-family: 'Cardo', serif; 
+    font-size: 1.25rem; color: #3e7352;
+    border: 1px solid #3e7352;
+    padding: 6px 56px;
+    border-radius: 10px;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .left .shopBtn:hover {
+    background: #3e7352;
+    color: #ebeaea;
+    transition: 0.5s;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .right {
+    margin-left: 100px;
+}
+main .productPage #slide .pageWrapper .selectSlide01 .right img {
+    width: 80%;
+}
+/* slide02 */
+main .productPage #slide .pageWrapper .selectSlide02 {
+    display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #759ca4;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; text-align: center;
+    justify-content: center;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a .left {
+    display: flex; flex-flow: column nowrap;
+    margin-right: 60px;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a .left h1 {
+    font-size: 2.5rem; font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a .left .boldTxt {
+    font-size: 1.875rem; color: #fff;
+    padding: 30px 0 45px 0;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a .left .btmLogo {}
+main .productPage #slide .pageWrapper .selectSlide02 a .left .btmLogo img {}
+main .productPage #slide .pageWrapper .selectSlide02 a .right {
+    margin-left: 60px;
+}
+main .productPage #slide .pageWrapper .selectSlide02 a .right img {
+    width: 95%;
+}
+/* slide03 */
+main .productPage #slide .pageWrapper .selectSlide03 {
+    display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #fbf9f4;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left {
+    width: 30%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left h1 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.5rem; font-weight: 600;
+    color: #f2989b;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .txt01 {
+    font-size: 1.25rem; font-weight: 600;
+    color: #f2989b;
+    padding: 30px 0 30px 0;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .txt02 {
+    font-size: 1rem; 
+    color: #f2989b;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .shopBtn {
+    font-family: 'Cardo', serif; 
+    font-size: 1.25rem; color: #f2989b;
+    border: 1px solid #f2989b;
+    padding: 6px 56px;
+    border-radius: 10px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .shopBtn:hover {
+    background: #f2989b;
+    color: #fff;
+    transition: 0.5s;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .right {
+    margin-left: 60px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .right img {
+    width: 90%;
+}
+main .productPage #slide .swiper-button-prev01  {
+    position: absolute; left: 1%; top: 45%; z-index: 10;
+}
+main .productPage #slide .swiper-button-prev01 img {
+    height: 40px;
+}
+main .productPage #slide .swiper-button-next01 {
+    position: absolute; right: 1%; top: 45%; z-index: 10;
+}
+main .productPage #slide .swiper-button-next01 img {
+    height: 40px;
+}
+main .productPage #slide .swiper-button-prev01::after {display: none;}
+main .productPage #slide .swiper-button-next01::after {display: none;}
+/* section-2 */
+main .sleepPage {
+    max-width:max-content;
+    margin: 80px 0;
+}
+main .sleepPage .title {
+    text-align: center;
+}
+main .sleepPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .sleepPage .title p {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+    margin-bottom: 100px;
+}
+main .sleepPage .sleep {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; margin: 0 300px;
+}
+main .sleepPage .sleep .sleepLeft {padding: 25px;}
+main .sleepPage .sleep .sleepLeft h3 {
+    font-size: 1.5rem; color:#5d5d5d; padding-bottom: 30px;
+    margin-top: 45px;
+}
+main .sleepPage .sleep .sleepLeft h3 span {
+    font-weight: 600; color:#5d5d5d;
+}
+main .sleepPage .sleep .sleepLeft p {
+    color:#5d5d5d; font-size: 1rem; line-height: 1.7;
+    padding-bottom: 50px; margin-right: 40px;
+}
+main .sleepPage .sleep .sleepLeft .moreBtn {
+    font-size: 0.75rem;
+    color:#5d5d5d; 
+    border: 1px solid #e5e7eb; 
+    border-radius: 5px;
+    padding: 10px 20px; 
+}
+main .sleepPage .sleep .sleepLeft .moreBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
+}
+main .sleepPage .sleep .sleepRight {}
+main .sleepPage .sleep .sleepRight img {width: 500px;}
+/* section-3_이벤트 페이지 */
+main .eventPage {
+    background-color: #cbd3d3f2; height: 130px;
+    text-align: center;
+}
+main .eventPage a {}
+main .eventPage a h2 {
+    font-size: 1.5rem; color: #fff; font-weight: 600; padding-top: 30px
+}
+main .eventPage a p {font-size: 1.125rem; color: #fff; padding-top: 20px}
+/* section-4 */
+main .deeperPage {width: 100%; margin: 0 auto;}
+main .deeperPage .title {text-align: center; margin-top: 110px;}
+main .deeperPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .deeperPage .title p {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+}
+main .deeperPage .title p span {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+}
+main .deeperPage .healthier {
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    text-align: center;
+}
+main .deeperPage .healthier .health {padding: 100px;}
+main .deeperPage .healthier .health .circle {}
+main .deeperPage .healthier .health .circle img:hover {
+    transform: scale(1.2);
+}
+main .deeperPage .healthier .health .circle img {
+    width: 100%; margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.5s ease-out;
+}
+main .deeperPage .healthier .health h3 {
+    font-family: 'Cardo', serif; font-weight: 600; font-size: 1.25rem; 
+    color:#5d5d5d; padding:40px 0 10px 0;
+}
+main .deeperPage .healthier .health p {
+    font-size: 1rem; color:#5d5d5d; width: 230px;
+}
+/* 이벤트 베너 */
+main .eventBnr {background-color: #f7f6f1;}
+main .eventBnr .veganBnr {}
+main .eventBnr .veganBnr img {width: 100%;}
+/* section-5 */
+main .shopPage {width: 100%; margin: 0 auto;}
+main .shopPage .productItem {width: 100%; height: 480px;}
+main .shopPage .productItem .swiper-container {
+    width: 67%; margin: 0 auto;
+    overflow: hidden;
+}
+main .shopPage .productItem .swiper-container .swiper-wrapper {}
+main .shopPage .productItem .swiper-container .swiper-wrapper .swiper-slide {
+    width: 300px; height:auto;
+}
+main .shopPage {
+    max-width: 1920px; margin: 0 auto;
+    margin: 100px 0 100px 0;
+    background: #fff;
+}
+main .shopPage .title {text-align: center; margin-top: 50px;}
+main .shopPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .shopPage .title p {
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 50px; 
+}
+main .shopPage .productItem {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .shopPage .productItem .item {
+    width: 300px;
+    padding: 14px 0 20px 0; margin: 0 10px;
+    position: relative;
+}
+main .shopPage .productItem .item p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+main .shopPage .productItem .item p img {width: 300px}
+main .shopPage .productItem .item .hoverImg img {
+    position: absolute; left: 0; top: -304px; display: none;
+}
+main .shopPage .productItem .item:hover .hoverImg img {
+    display: block;
+}
+main .shopPage .productItem .item .colorSelect {margin-top: 5px;}
+main .shopPage .productItem .item .white::after {
+    content: ''; display: inline-block;
+    width: 10px ; height: 10px;
+    background-color: #fff;
+    margin-right: 1px;
+    border: 1px solid #ccc;
+}
+main .shopPage .productItem .item .brown::after {
+    content: ''; display: inline-block;
+    width: 10px ; height: 10px;
+    background-color: #655e52;
+    border: 1px solid #ccc;
+}
+main .shopPage .productItem .item .white {}
+main .shopPage .productItem .item .brown {}
+main .shopPage .productItem .item h2, .price {color: #4f4f4f; font-size: 0.938rem;}
+main .shopPage .productItem .item h2:nth-child(6) {padding: 0px;}
+main .shopPage .productItem .item h2 {
+    padding-top: 10px; font-weight: 600;
+}
+main .shopPage .productItem .item .price {padding-top: 10px;}
+main .shopPage .productItem .item .price del {
+    font-size: 0.688rem; text-decoration: line-through;
+    padding-left: 5px;
+}
+main .shopPage .productItem .item .saleMd {
+    padding-top: 10px;
+}
+main .shopPage .productItem .item .saleMd .sale {
+    padding: 2px 8px; color: #fff; background-color: #fe5356;
+    font-size: 0.688rem;
+}
+main .shopPage .productItem .item .saleMd .md {
+    padding: 2px 8px; border: 1px solid #ccc;
+    font-size: 0.688rem;
+}
+/* section-6 */
+main .storyPage {
+    width: 100%; margin: 0 auto;
+    background: rgba(168, 181, 181, 0.05);
+    padding: 60px 0;
+}
+main .storyPage .title {text-align: center; padding-top: 30px;}
+main .storyPage .title h2 {    
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .storyPage .title p {    
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 30px;
+}
+main .storyPage .interview {}
+main .storyPage .interview {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; margin-bottom: 50px;
+}
+main .storyPage .interview a:hover .info {
+    display: block;
+}
+main .storyPage .interview a {margin-left: 7.5px; position: relative;}
+main .storyPage .interview a img {width: 100%; height: 100%;}
+main .storyPage .interview a .info {
+    text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 100%;
+    display: none;
+}
+main .storyPage .interview a .info span {
+    font-size: 1.125rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 170px;
+}
+main .storyPage > p {text-align: center; margin-top: 10px;}
+main .storyPage p .viewLink {
+    font-size: 0.75rem; color: #4f4f4f;  padding: 10px 20px; 
+    border: 1px solid #ccc; border-radius: 5px; 
+}
+main .storyPage p .viewLink:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
+}
+/* section-7 */
+main .blueBottle {
+    height: 130px; background-color: #cbd3d3f2;
+}
+main .blueBottle a {
+    padding-top: 26px;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    align-items: center; text-align: center;
+}
+main .blueBottle a .left {
+    color: #fff; font-size: 1.875rem; font-weight: 600;
+}
+main .blueBottle a .right {}
+main .blueBottle a .right img {width: 72px;}
+/* section-8 */
+main .newsPage {
+    max-width: 1920px; margin: 0 auto;
+    margin: 60px 0 100px 0;
+}
+main .newsPage .title {text-align: center; padding-top: 40px;}
+main .newsPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .newsPage .title p {
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 30px;
+}
+/* 공통 */
+main .newsPage .instagram .up a img,
+main .newsPage .instagram .down a img {width: 303px; margin: 5px;}
+/* 개별 */
+main .newsPage .instagram{text-align: center;}
+main .newsPage .instagram .up {}
+main .newsPage .instagram .up a img:hover {
+    filter: opacity(70%);
+    transition: 0.2s ease-out;
+}
+main .newsPage .instagram .up a img {}
+main .newsPage .instagram .up a .bg {}
+main .newsPage .instagram .down {}
+main .newsPage .instagram .down a img:hover {
+    filter: opacity(70%);
+    transition: 0.2s ease-out;
+}
+main .newsPage .instagram .down a img {}
+/* section-9 */
+main .goodNightPage {
+    width: 100%; height: 100%; text-align: center; 
+    position: relative;
+}
+main .goodNightPage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .goodNightPage .bg {
+    padding: 100px;
+    background-image: url(../images/bg3.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .goodNightPage .bg h2, p, .moreBtn {position: relative; z-index: 800;}
+main .goodNightPage .bg h2 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.25rem; color: #fff;  
+    text-align: center;
+}
+main .goodNightPage .bg p {
+    font-size: 1.25rem; color: #fff; 
+    margin: 40px 0 50px 0;
+}
+main .goodNightPage .bg .moreBtn {
+    font-size: 0.75rem; color: #4f4f4f; 
+    background-color: #fff;
+    border: 1px solid #fff; padding: 10px 20px; 
+    border-radius: 5px;
+}
+main .goodNightPage .bg .moreBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
+}

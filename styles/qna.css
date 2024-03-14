@@ -1,0 +1,83 @@
+main {}
+main .qnaWrap {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .qnaWrap .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .qnaWrap .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .qnaWrap .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 160px;
+}
+main .qnaWrap .container {
+    max-width: 1250px; margin: 0 auto;
+    position: relative;
+}
+main .qnaWrap .container .box {
+    margin: 50px 0 20px 0;
+}
+main .qnaWrap .container .box p {
+    font-size: 0.875rem; color: #4f4f4f;
+}
+main .qnaWrap .container .box p em {
+    font-size: 0.875rem; color: #4f4f4f;
+}
+main .qnaWrap .container .boardPage {
+    display: flex; flex-flow: column nowrap;
+}
+main .qnaWrap .container .boardPage .board {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 20px;
+}
+main .qnaWrap .container .boardPage .board span {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 600;
+}
+main .qnaWrap .container .boardPage .board span:nth-child(2) {padding: 0 25%;}
+main .qnaWrap .container .boardPage .boardDetail {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 20px;
+}
+main .qnaWrap .container .boardPage .boardDetail p {
+    font-size: 0.75rem; color: #4f4f4f;
+}
+main .qnaWrap .container .boardPage .boardDetail p:nth-child(1) {padding-left: 5px;}
+main .qnaWrap .container .boardPage .boardDetail p:nth-child(3) {color: #4f4f4fa6;padding-left: 30px;}
+main .qnaWrap .container .boardPage .boardDetail p:nth-child(4) {color: #4f4f4fa6; padding-right: 20px;} 
+main .qnaWrap .container .boardPage .boardDetail p:nth-child(5) {color: #4f4f4fa6; padding-right: 13px;}
+main .qnaWrap .container .boardPage .boardDetail a {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 600;
+    padding: 0 16%;
+}
+main .qnaWrap .container .writing {
+    display: flex; justify-content: right;
+    padding: 20px 0 100px 0;
+}
+main .qnaWrap .container .writing .writingBtn {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    border: 1px solid #ccc;
+    padding: 6px 20px;
+}
+main .qnaWrap .container .writing .writingBtn:hover {
+    font-size: 0.75rem; color: #fff; font-weight: 500;
+    border: 1px solid #4f4f4f;
+    background: #4f4f4f;
+    padding: 6px 20px;
+    transition: 0.5s; 
+}

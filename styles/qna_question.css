@@ -1,0 +1,150 @@
+main {}
+main section {
+    max-width: 1250px; margin: 0 auto;
+}
+main section .title {}
+main section .title h1 {
+    font-size: 1.875rem; color: #4f4f4f;
+    padding: 30px 0;
+    font-family: 'Cardo', serif;
+}
+main section .title .container {}
+main section .title .container h2 {
+    font-size: 1.25rem; color: #4f4f4f;
+    padding: 10px 0; font-weight: 500;
+}
+main section .title .container > .userInfo {
+    display: flex; align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+main section .title .container .userInfo  p{}
+main section .title .container .userInfo  p img {
+    width: 40px; border-radius: 50%;
+}
+main section .title .container .userInfo .info {
+    padding-left: 10px;
+}
+main section .title .container .userInfo .info p {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding-bottom: 5px;
+}
+main section .title .container .userInfo .info .settings {
+    display: flex; flex-flow: row nowrap;
+}
+main section .title .container .userInfo .info .settings a {
+    font-size: 0.813rem; color: #4f4f4f; font-weight: 500;
+    padding-left: 5px;
+}
+main section .title .container .userInfo .info .settings a:nth-child(1) {padding-left: 0;}
+main section .title .container .userInfo .info .settings p {
+    font-size: 0.813rem; color: #4f4f4fB3;
+    padding-left: 5px;
+}
+main section .title .container > p {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 30px 0; 
+    line-height: 2;
+}
+main section .title .container > a {
+    font-size: 1.063rem; color: #4f4f4f;
+    display: flex; align-items: center;
+    padding: 30px 0;
+}
+main section .title .container a img {padding-right: 5px;}
+main section .title .container .comments1 {}
+main section .title .container .comments1 .userInfo {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+main section .title .container .comments1 .userInfo p {}
+main section .title .container .comments1 .userInfo p img{}
+main section .title .container .comments1 .userInfo .info {}
+main section .title .container .comments1 .userInfo .info p {
+    font-size: 0.813rem; color: #4f4f4f; font-size: 500;
+    padding-bottom: 10px;
+}
+main section .title .container .comments1 .userInfo .info p span {
+    font-size: 0.813rem; color: #4f4f4f80;
+    padding-left: 5px;
+}
+main section .title .container .comments1 .userInfo .info .setting {}
+main section .title .container .comments1 .userInfo .info .setting a {
+    font-size: 0.75rem; color: #757575;
+}
+main section .title .container .comments1 .userInfo .info .setting span {
+    font-size: 0.75rem; color: #757575;
+}
+main section .title .container .comments2 {
+    display: flex;
+    padding: 20px 0 30px 0;
+}
+main section .title .container .comments2 p {}
+main section .title .container .comments2 p img {
+    width: 40px; border-radius: 50px;
+}
+main section .title .container .comments2 .manager {
+    padding-left: 5px;
+}
+main section .title .container .comments2 .manager p {
+    font-size: 0.813rem; color: #4f4f4f; font-weight: 500;
+    padding-bottom: 10px; line-height: 1.5;
+}
+main section .title .container .comments2 .manager p span {
+    font-size: 0.813rem; color: #4f4f4f80;
+    padding-left: 5px;
+}
+main section .title .container .comments2 .manager a {
+    font-size: 0.75rem; color: #757575; font-weight: 500;
+}
+main section .title .container #comments {}
+main section .title .container #comments fieldset {}
+main section .title .container #comments fieldset #coName {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+main section .title .container #comments fieldset #coPw {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+main section .title .container #comments fieldset .txtArea {}
+main section .title .container #comments fieldset .txtArea #text {
+    border: none; resize: none;
+    width: 1250px;
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 15px 16px;
+}
+main section .title .container #comments fieldset .txtArea .txtData {position: relative;}
+main section .title .container #comments fieldset .txtArea .txtData a{}
+main section .title .container #comments fieldset .txtArea .txtData a img{
+    width: 20px;
+    position: absolute; left: 20px; bottom: 20px;
+}
+main section .title .container #comments fieldset .txtArea .txtData .btn{
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 6px 20px;
+    border: 1px solid #e5e7eb;
+    position: absolute; right: 15px; bottom: 20px;
+}
+main section .title .container #comments fieldset .txtArea .txtData .btn:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+}
+main section .title .container .listWriting {
+    display: flex; justify-content: space-between;
+    margin: 50px 0;
+}
+main section .title .container .listWriting a {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 6px 20px;
+}
+main section .title .container .listWriting a:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+    transition: 0.5s; 
+}

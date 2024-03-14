@@ -1,0 +1,241 @@
+main {}
+main section {
+    max-width: 1250px; margin: 0 auto;
+}
+main section .title {
+    padding: 40px 0;
+}
+main section .title h1 {
+    font-size: 1.875rem; font-weight: 600;
+    color: #4f4f4f;
+}
+main section .cartWrap {}
+main section .cartWrap .productState {
+    display: flex; flex-flow: row nowrap;
+    border-top: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .cartWrap .productState .chk01 {}
+main section .cartWrap .productState p {
+    font-size: 0.875rem;
+    color: #4f4f4f99;
+}
+main section .cartWrap .productState .info {
+    width: 725px;
+    padding: 12px 0;
+    padding-left: 10px;
+}
+main section .cartWrap .productState .quantity {
+    width: 189px;
+    padding: 12px 0;
+    text-align: center;
+}
+main section .cartWrap .productState .orderAmount {
+    width: 189px;
+    padding: 12px 0;
+    text-align: center;
+}
+main section .cartWrap .productState .delinfo {
+    width: 147px;
+    padding: 12px 0;
+    text-align: center;
+}
+main section .cartWrap .productDetail {
+    display: flex; flex-flow: row nowrap;
+    border-top: 1px solid rgba(79, 79, 79, 0.15);
+    border-bottom: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .cartWrap .productDetail .product {
+    display: flex; flex-flow: row nowrap;
+    width: 725px;
+    padding: 20px 0;
+    position: relative;
+}
+main section .cartWrap .productDetail .product .chk02 {}
+main section .cartWrap .productDetail .product .detail {
+    display: flex; flex-flow: row nowrap;
+    padding-left: 10px;
+}
+main section .cartWrap .productDetail .product .detail .productImg {
+    display: flex; flex-flow: row nowrap;
+}
+main section .cartWrap .productDetail .product .detail .productImg a {}
+main section .cartWrap .productDetail .product .detail .productImg a img {
+    width: 80px;
+}
+main section .cartWrap .productDetail .product .detail .productImg .closeBtn01 {
+    position: absolute; right: 50px; 
+}
+main section .cartWrap .productDetail .product .detail .productImg .closeBtn01 img {
+    width: 15px;
+}
+main section .cartWrap .productDetail .product .detail .productTilte {
+    margin-left: 10px;
+    padding: 10px;
+}
+main section .cartWrap .productDetail .product .detail .productTilte h2 {
+    font-size: 0.938rem;
+    color: #4f4f4f;
+    padding-bottom: 10px;
+}
+main section .cartWrap .productDetail .product .detail .productTilte .option {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #4f4f4f08;
+    padding: 5px;
+}
+main section .cartWrap .productDetail .product .detail .productTilte .option p .md {
+    font-size: 0.625rem;
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    border-radius: 3px;
+    padding: 2px 3px; 
+    margin-right: 10px;
+}
+main section .cartWrap .productDetail .product .detail .productTilte .option p .color {
+    font-size: 0.813rem;
+    color: #4f4f4f;
+}
+main section .cartWrap .productDetail .product .detail .productTilte .option .closeBtn02 {}
+main section .cartWrap .productDetail .product .detail .productTilte .option .closeBtn02 img {
+    width: 15px;
+}
+main section .cartWrap .productDetail .qt {
+    text-align: center;
+    width: 189px;
+    padding: 20px 0;
+    border-left: 1px solid rgba(79, 79, 79, 0.15);
+    border-right: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .cartWrap .productDetail .qt p {
+    font-size: 0.938rem; color: #4f4f4f;
+    padding: 10px 0;
+}
+main section .cartWrap .productDetail .qt .optionQt {
+    font-size: 0.75rem;
+    border: 1px solid #4f4f4f99;
+    border-radius: 3px;
+    padding: 7px 8px; 
+}
+main section .cartWrap .productDetail .orderPrice {
+    text-align: center;
+    width: 189px;
+    padding: 20px 0;
+    border-right: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .cartWrap .productDetail .orderPrice p {
+    font-size: 1.25rem;
+    color: #4f4f4f; font-weight: 600;
+    padding: 10px 0;
+    letter-spacing: 1.5px;
+}
+main section .cartWrap .productDetail .orderPrice .quick {
+    font-size: 0.75rem;
+    border: 1px solid #4f4f4f99;
+    border-radius: 3px;
+    padding: 7px 20px; 
+}
+main section .cartWrap .productDetail .delivery {
+    text-align: center;
+    width: 147px;
+    padding: 20px 0;
+}
+main section .cartWrap .productDetail .delivery .delinfo {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+main section .cartWrap .productDetail .delivery .delinfo p {
+    font-size: 0.938rem; color: #4f4f4f;
+}
+main section .cartWrap .productDetail .delivery .delinfo .qna {padding-left: 5px;}
+main section .cartWrap .productDetail .delivery .delinfo .qna img {
+    width: 18px;
+}
+main section .cartWrap .productDetail .delivery p {
+    font-size: 0.813rem; color: #4f4f4f;
+}
+main section .cartWrap .optionBox {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 16px 8px 40px 0;
+}
+main section .cartWrap .optionBox .delete {}
+main section .cartWrap .optionBox .delete .choice {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    padding: 7px 8px;
+    border: 1px solid #4f4f4f99;
+}
+main section .cartWrap .optionBox .delete .soldOut {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    padding: 7px 8px;
+    border: 1px solid #4f4f4f99;
+}
+main section .cartWrap .optionBox p {
+    font-size: 0.813rem; color: #4f4f4f;
+}
+main section .allPrice {
+    display: flex; flex-flow: column nowrap;
+    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #4f4f4f;
+}
+main section .allPrice .orderProduct {
+    padding: 12px 0;
+    font-size: 0.813rem;
+    color: #4f4f4f;
+    border-bottom: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .allPrice .price {
+    text-align: center;
+    padding: 32px 0;
+}
+main section .allPrice .price .amount {
+    font-size: 1.5rem;
+    color: #4f4f4f; font-weight: 600;
+    padding: 10px 0;
+}
+main section .allPrice .price .amount span {
+    font-size: 1.5rem;
+    color: #4f4f4f; font-weight: 600;
+    padding: 0 10px;
+}
+main section .allPrice .price .description {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+main section .allPrice .price .description span {
+    font-size: 0.813rem; color: #4f4f4f99;
+    padding: 10px 40px;
+}
+main section .order {
+    padding: 32px 0;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+main section .order .ordering {
+    width: 280px;
+    font-size: 0.938rem; color: #fff;
+    padding: 10px 50px;
+    background: #4f4f4f;
+}
+main section .order .pay {
+    width: 280px;
+    margin-top: 10px;
+    font-size: 0.938rem; color: #000;
+    font-weight: 600;
+    padding: 10px 50px;
+    background: #00de5a;
+    display: flex; align-items: center;
+    justify-content: center;
+}
+main section .order .pay img {
+    width: 110px;
+    padding-right: 5px;
+}
+main section .order a {
+    padding-top: 10px;
+    font-size: 0.938rem; color: #4f4f4f99;
+    text-decoration: underline;
+}

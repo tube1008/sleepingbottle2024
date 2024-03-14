@@ -1,0 +1,105 @@
+/* popup */
+.musicDetail {
+    display: none;
+}
+.musicDetail .bg{
+    width: 100%; height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    position: relative; z-index: 950;
+    position: fixed;
+}
+.musicDetail .bg .musicBox {}
+.musicDetail .bg .musicBox .closeBtn {
+    position: absolute; right: 5%; top: 5%;
+}
+.musicDetail .bg .musicBox .closeBtn img {width: 30px;}
+.musicDetail .bg .musicBox .fakeVideo {
+    position: absolute; left: 18%; top: 15%; 
+}
+.musicDetail .bg .musicBox .fakeVideo img {
+    width: 100%;
+}
+.musicDetail .bg .musicBox .text {
+    display: flex; flex-flow: column nowrap;
+    position: absolute; left: 20px; bottom: 20px;
+}
+.musicDetail .bg .musicBox .text .txt01 {
+    font-size: 1.188rem; color: #fff;
+}
+.musicDetail .bg .musicBox .text .txt02 {
+    font-size: 0.75rem; color: #fff;
+}
+/* main */
+main {
+    max-width: 1920px; margin: 0 auto;
+    overflow-x: hidden;
+}
+main .sleepingMusic {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .sleepingMusic .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .sleepingMusic .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .sleepingMusic .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 245px;
+}
+main .sleepingMusic .music {
+    position: relative; left: 50%; top: 0;
+    transform: translateX(-50%);
+    max-width: 1280px;
+    text-align: center;
+    display: grid; 
+    grid-template: 'item1 item2 item3'
+                    'item4 item5 item6'
+                    'item7 item8 item9' ;
+    justify-content: center;
+    margin: 100px 0;
+}
+main .sleepingMusic .music .item {
+    position: relative;
+    margin: 5px;
+    border: 1px solid #e5e7eb;
+}
+main .sleepingMusic .music .item a {}
+main .sleepingMusic .music .item a img {
+    width: 408px;
+}
+main .sleepingMusic .music .item a .play {
+    width: 20px;
+    position: absolute; right: 15px; top: 15px;
+}
+main .sleepingMusic .music .item .data {
+    text-align: left;
+    padding: 10px 5px;
+}
+main .sleepingMusic .music .item .data .number {
+    font-size: 0.875rem; color: #212121;
+    padding-bottom: 5px;
+}
+main .sleepingMusic .music .item .data .album {
+    font-size: 0.75rem; color: #999;
+}
+main .sleepingMusic .moreBtn {
+    font-size: 0.75rem; color: #4f4f4f;
+    border: 1px solid #e5e7eb;
+    padding: 10px 20px;
+    position: relative; left: 50%; bottom: 70px;
+    transform: translateX(-50%);
+}
+main .sleepingMusic .moreBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}

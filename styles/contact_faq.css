@@ -1,0 +1,71 @@
+main {}
+main .faqWrap {
+    width: 100%;
+    position: relative;
+}
+main .faqWrap .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .faqWrap .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .faqWrap .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 250px;
+}
+main .faqWrap .faqContainer {
+    max-width: 1250px; margin: 0 auto;
+    padding-bottom: 100px;
+}
+main .faqWrap .faqContainer .box {
+    display: flex; align-items: center;
+    margin: 50px 0 20px 0;
+}
+main .faqWrap .faqContainer .box p {
+    font-size: 0.875rem; color: #4f4f4f;
+    font-weight: 600;
+}
+main .faqWrap .faqContainer .box p em {
+    font-size: 0.75rem; color: #4f4f4f;
+}
+main .faqWrap .faqContainer .detail {}
+main .faqWrap .faqContainer .detail ul {}
+main .faqWrap .faqContainer .detail ul li {}
+main .faqWrap .faqContainer .detail ul li .title {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 10px;
+}
+main .faqWrap .faqContainer .detail ul li .title h2 {
+    font-size: 1rem;
+    color: #4f4f4f; font-weight: 600;
+}
+main .faqWrap .faqContainer .detail ul li .title p {}
+main .faqWrap .faqContainer .detail ul li .title p img {width: 18px;}
+main .faqWrap .faqContainer .detail ul li:first-child {border-top: 1px solid #ccc;}
+main .faqWrap .faqContainer .detail ul li .moreDetail {
+    padding: 20px 10px; 
+    display: none;
+}
+main .faqWrap .faqContainer .detail ul li .moreDetail > p {
+    font-size: 0.875rem; color: #4f4f4f;
+    display: flex; align-items: center;
+    padding-bottom: 20px;
+}
+main .faqWrap .faqContainer .detail ul li .moreDetail:last-child {border-bottom: 1px solid #ccc;}
+main .faqWrap .faqContainer .detail ul li .moreDetail p img {
+    width: 40px; border-radius: 50%; margin-right: 15px;
+}
+main .faqWrap .faqContainer .detail ul li .moreDetail span {
+    color: #4f4f4f;
+}

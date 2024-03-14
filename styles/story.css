@@ -1,0 +1,70 @@
+main {max-width: 1920px;}
+main .storyPage {
+    width: 100%; height: 100%; text-align: center; 
+    position: relative;
+}
+main .storyPage .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .storyPage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .storyPage .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: -485px;
+}
+main .storyPage .interview {
+    position: relative; left: 50%; top: 0;
+    transform: translateX(-50%);
+    max-width: 1280px;
+    text-align: center;
+    display: grid; 
+    grid-template: 'item1 item2 item3'
+                    'item4 item5 item6'
+                    'item7 item8 item9' 
+                    'item10 item10 item10' ;
+    justify-content: center;
+    margin: 100px 0;
+}
+main .storyPage .interview .item {
+    position: relative;
+    margin: 10px;
+}
+main .storyPage .interview .item img {
+    width: 100%; height: 100%;
+}
+main .storyPage .interview .item .info {
+    text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%; height: 100%;
+    transition: 0.4s ease-out;
+    display: none;
+}
+main .storyPage .interview .item:hover .info {
+    display: block;
+}
+main .storyPage .interview .item .info span {
+    font-size: 1.125rem; color: #fff;
+}
+main .storyPage .interview .item1 .info .name {position: absolute; left: 130px; top: 105px;}
+main .storyPage .interview .item2 .info .name {position: absolute; left: 110px; top: 105px;}
+main .storyPage .interview .item3 .info .name {position: absolute; left: 95px; top: 105px;}
+main .storyPage .interview .item4 .info .name {position: absolute; left: 120px; top: 105px;}
+main .storyPage .interview .item5 .info .name {position: absolute; left: 95px; top: 105px;}
+main .storyPage .interview .item6 .info .name {position: absolute; left: 80px; top: 105px;}
+main .storyPage .interview .item7 .info .name {position: absolute; left: 90px; top: 105px;}
+main .storyPage .interview .item8 .info .name {position: absolute; left: 120px; top: 105px;}
+main .storyPage .interview .item9 .info .name {position: absolute; left: 110px; top: 105px;}
+main .storyPage .interview .item10 .info .name {position: absolute; left: 110px; top: 105px;}
+main .storyPage .interview .item .info .like {
+    position: absolute; left: 15px; bottom: 15px;
+    font-size: 0.875rem;
+}

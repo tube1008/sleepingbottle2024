@@ -1,0 +1,195 @@
+/* 관리자 팝업창 */
+.manager {
+    width: 325px; text-align: center;
+    position: absolute; left: 50%; top: 60%; z-index: 900;
+    transform: translateX(-50%);
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 24px;
+    box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: none;
+}
+.manager p {
+    font-size: 0.75rem; color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative; left: -25px;
+}
+.manager #managerPW {text-align: center;}
+.manager #managerPW fieldset {
+    display: flex; text-align: center;
+}
+.manager #managerPW fieldset #pw {
+    border: 1px solid #4f4f4f;
+    font-size: 0.75rem;
+    padding: 5px 7px;
+    margin: 0 5px 0;
+    border-radius: 3px;
+}
+.manager #managerPW fieldset a {
+    font-size: 0.75rem; color: #4f4f4f;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 5px 12px;
+    border-radius: 3px;
+}
+.manager #managerPW fieldset a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f; 
+}
+/* main */
+main {}
+main .sleepingStory {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .sleepingStory .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .sleepingStory .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .sleepingStory .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 250px;
+}
+main .sleepingStory .title {
+    margin: 0 auto;
+    max-width: 1250px;
+}
+main .sleepingStory .title h2 {
+    font-size: 1.125rem; color: #4f4f4f;
+    font-weight: 500;
+    margin: 50px 0 30px 0;
+}
+main .sleepingStory .title .menu {
+    border: 1px solid #e5e7eb;
+    border-top: none; border-left: none; border-right: none;
+    padding: 0 0 20px 0;
+}
+main .sleepingStory .title .menu a {
+    font-size: 0.75rem; color: #4f4f4f;
+    font-weight: 500;
+    margin-right: 10px;
+    
+}
+main .sleepingStory .title .menu a:nth-child(1) {
+    color: #757575;
+}
+main .sleepingStory .title .storyDetail {
+    margin: 40px 0; 
+}
+main .sleepingStory .title .storyDetail p {}
+main .sleepingStory .title .storyDetail p img {
+    max-width: 1250px;
+    margin-bottom: 40px;
+}
+main .sleepingStory .title .storyDetail h3 {
+    font-size: 1.125rem; color: #4f4f4f;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .sleepingStory .title .storyDetail .question {
+    font-size: 0.875rem; color: #4f4f4f; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main .sleepingStory .title .storyDetail .answer {
+    font-size: 0.875rem; color: #4f4f4f; 
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+main .sleepingStory .title .storyDetail a {
+    display: block;
+    text-decoration: underline;
+    font-size: 0.875rem; color: #4f4f4f;
+    font-weight: 700;
+    padding-top: 50px;
+}
+main .sleepingStory .title .btmPage {
+    display: flex; justify-content: space-between;
+    margin: 30px 0;
+}
+main .sleepingStory .title .btmPage .like {
+    font-size: 1.2rem; color: #4f4f4f;
+}
+main .sleepingStory .title .btmPage .share {}
+main .sleepingStory .title .btmPage .share img {
+    height: 17px;
+}
+main .sleepingStory .title #comments {}
+main .sleepingStory .title #comments fieldset {}
+main .sleepingStory .title #comments fieldset #coName {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+main .sleepingStory .title #comments fieldset #coPw {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+main .sleepingStory .title #comments fieldset .txtArea {}
+main .sleepingStory .title #comments fieldset #text {
+    border: none; resize: none;
+    width: 1250px;
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 15px 16px;
+}
+main .sleepingStory .title #comments fieldset .txtData {position: relative;}
+main .sleepingStory .title #comments fieldset .txtData a {}
+main .sleepingStory .title #comments fieldset .txtData a img {
+    width: 20px;
+    position: absolute; left: 20px; bottom: 20px;
+}
+main .sleepingStory .title #comments fieldset .txtData .btn {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 6px 20px;
+    border: 1px solid #e5e7eb;
+    position: absolute; right: 15px; bottom: 20px;
+}
+main .sleepingStory .title #comments fieldset .txtData .btn:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+}
+main .sleepingStory .title .next {display: flex; flex-flow: column nowrap;}
+main .sleepingStory .title .next .nextPage {
+    border: 1px solid #e5e7eb;
+    border-top: none; border-left: none; border-right: none;
+    padding: 40px 0 15px 0;
+    display: flex; align-items: center;
+}
+main .sleepingStory .title .next .nextPage img {
+    width: 20px; margin-right: 20px;
+}
+main .sleepingStory .title .next .nextPage span {
+    font-size: 0.875rem; color: #4f4f4f;
+    font-weight: 600;
+}
+main .sleepingStory .title .next .btn {}
+main .sleepingStory .title .next .btn:hover {
+    
+}
+main .sleepingStory .title .next .backPress {
+    display: block;
+    width: 66px;
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 6px 20px;
+    border: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+main .sleepingStory .title .next .backPress:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+}

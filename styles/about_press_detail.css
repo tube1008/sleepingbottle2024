@@ -1,0 +1,125 @@
+main {}
+main .pressDetailpage {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .pressDetailpage .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .pressDetailpage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .pressDetailpage .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 230px;
+}
+main .pressDetailpage .summary {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+main .pressDetailpage .summary h2 {
+    font-size: 1.125rem; color: #4f4f4f; font-weight: 500;
+    margin: 50px 0 20px;
+}
+main .pressDetailpage .summary .release {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-bottom: 40px;
+    padding: 10px 0 20px 0;
+    border: 1px solid #e5e7eb;
+    border-top: none; border-left: none; border-right: none;
+}
+main .pressDetailpage .summary .release img {
+    width: 40px; border-radius: 50%; margin-right: 15px;
+}
+main .pressDetailpage .summary .release .right {}
+main .pressDetailpage .summary .release .right p {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 400;
+}
+main .pressDetailpage .summary .release .right a {
+    font-size: 0.813rem; color: #757575;
+}
+main .pressDetailpage .summary .press {margin-bottom: 150px;}
+main .pressDetailpage .summary .press img {
+    width: 426px; margin-bottom: 30px;
+}
+main .pressDetailpage .summary .press p {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    line-height: 1.5; padding-bottom: 10px;
+}
+main .pressDetailpage .summary .press p:nth-child(4) {padding-top: 30px;}
+main .pressDetailpage .summary .share {
+    position: absolute; right: 310px; bottom: 300px;
+}
+main .pressDetailpage .summary .share img {
+    width: 17px;
+}
+main .pressDetailpage #comments {}
+main .pressDetailpage #comments fieldset {}
+main .pressDetailpage #comments fieldset #coName {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+main .pressDetailpage #comments fieldset #coPw {
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+main .pressDetailpage #comments fieldset .txtArea {}
+main .pressDetailpage #comments fieldset .txtArea #text {
+    border: none; resize: none;
+    width: 1280px;
+    color: #4f4f4f; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 15px 16px;
+}
+main .pressDetailpage #comments fieldset .txtArea .txtData {position: relative;}
+main .pressDetailpage #comments fieldset .txtArea .txtData a{}
+main .pressDetailpage #comments fieldset .txtArea .txtData a img{
+    width: 20px;
+    position: absolute; left: 20px; bottom: 20px;
+}
+main .pressDetailpage #comments fieldset .txtArea .txtData .btn{
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 6px 20px;
+    border: 1px solid #e5e7eb;
+    position: absolute; right: 15px; bottom: 20px;
+}
+main .pressDetailpage #comments fieldset .txtArea .txtData .btn:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+}
+main .pressDetailpage .next {display: flex; flex-flow: column nowrap;}
+main .pressDetailpage .next .nextPage{
+    border: 1px solid #e5e7eb;
+    border-top: none; border-left: none; border-right: none;
+    padding: 40px 0 15px 0;
+    display: flex; align-items: center;
+}
+main .pressDetailpage .next .nextPage img {
+    width: 20px; margin-right: 20px;
+}
+main .pressDetailpage .next .nextPage span{
+    font-size: 0.875rem; color: #4f4f4f;
+    font-weight: 600;
+}
+main .pressDetailpage .next .backPress{
+    display: block;
+    width: 66px;
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 6px 20px;
+    border: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+main .pressDetailpage .next .backPress:hover {
+    background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
+}

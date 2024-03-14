@@ -1,0 +1,114 @@
+/* main_ourstory */
+main {}
+main .ourStory {
+    width: 100%; height: 100%; text-align: center; 
+    position: relative;
+}
+main .ourStory .topBg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .ourStory .topBg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .ourStory .topBg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: -455px;
+}
+main .ourStory .topPage {}
+main .ourStory .topPage .firstSubject {}
+main .ourStory .topPage .firstSubject h2 {
+    font-size: 2.25rem; color: #4f4f4f;
+    font-family: 'Cardo', serif;
+    margin: 150px 0 20px;
+}
+main .ourStory .topPage .firstSubject p {
+    color: #4f4f4f; font-weight: 500;
+}
+main .ourStory .topPage .firstSubject p:nth-child(2) {
+    font-size: 1.5rem; margin-bottom: 30px; 
+}
+main .ourStory .topPage .firstSubject p:nth-child(3) {
+    font-size: 1rem;
+    line-height: 1.5; 
+    margin-bottom: 50px;
+}
+main .ourStory .topPage .firstSubject .image {
+    display: flex; justify-content: center;
+}
+main .ourStory .topPage .firstSubject .image img {
+    width: 550px; height: 800px;
+}
+main .ourStory .topPage .firstSubject .image img:nth-child(1) {padding-right: 25px;}
+main .ourStory .topPage .firstSubject .image img:nth-child(2) {padding-left: 25px;}
+main .ourStory .topPage .midPage {
+    margin: 100px 0 ;
+}
+main .ourStory .topPage .midPage .midimage {}
+main .ourStory .topPage .midPage .midimage img {
+    width: 253px;
+}
+main .ourStory .topPage .midPage .secondSubject {}
+main .ourStory .topPage .midPage .secondSubject h2 {
+    font-size: 2.25rem; color: #4f4f4f;
+    font-family: 'Cardo', serif;
+    margin-bottom: 20px;
+}
+main .ourStory .topPage .midPage .secondSubject p {
+    font-size: 1.5rem; color: #4f4f4f; font-weight: 400;
+}
+main .ourStory .topPage .midPage .secondSubject p:nth-child(3) {
+    font-size: 1rem;
+    line-height: 1.5; margin: 20px 0 50px 0;
+}
+main .ourStory .topPage .midPage .secondSubject p em {
+    font-weight: 700; font-size: 1.5rem; color: #4f4f4f;
+}
+main .ourStory .topPage .midPage .secondSubject img {
+    width: 588px;
+}
+main .ourStory .topPage .goodNightPage {
+    width: 100%; height: 100%; text-align: center; 
+    position: relative;
+}
+main .ourStory .topPage .goodNightPage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute; left: 0; top: 0;
+}
+main .ourStory .topPage .goodNightPage .bg {
+    padding: 100px;
+    background-image: url(../images/about_ourstory/6.bg.png); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .ourStory .topPage .goodNightPage .bg h2, p, a {
+    position: relative; z-index: 900;
+}
+main .ourStory .topPage .goodNightPage .bg h2 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.25rem; color: #fff;  
+    text-align: center;
+}
+main .ourStory .topPage .goodNightPage .bg p {
+    font-size: 1.25rem; color: #fff; 
+    margin: 40px 0 50px 0;
+}
+main .ourStory .topPage .goodNightPage .bg a {
+    font-size: 0.75rem; color: #4f4f4f; 
+    background-color: #fff;
+    border: 1px solid #fff; padding: 10px 20px; 
+    border-radius: 5px;
+}
+main .ourStory .topPage .goodNightPage .bg a:hover {
+    background: #4f4f4f; color: #fff; border: 1px solid #4f4f4f;
+}

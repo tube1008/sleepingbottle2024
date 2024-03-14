@@ -1,0 +1,79 @@
+main {}
+main .contactWrap {
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .contactWrap .bg {
+    padding: 80px;
+    background-image: url(../images/about_ourstory/1_title.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+main .contactWrap .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 217px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .contactWrap .bg h1 {
+    font-size: 3rem; color: #fff;
+    font-family: 'Cardo', serif;
+    position: relative; left: 250px;
+}
+main .contactWrap #contact {
+    max-width: 1250px; margin: 0 auto;
+    margin-top: 50px;
+}
+main .contactWrap #contact fieldset {}
+main .contactWrap #contact fieldset {}
+main .contactWrap #contact fieldset label {
+    display: flex; flex-flow: column nowrap;
+}
+main .contactWrap #contact fieldset label span {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 600;
+    margin-top: 30px;
+}
+main .contactWrap #contact fieldset label #contactName {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+main .contactWrap #contact fieldset label .tel {
+    display: flex; flex-flow: row nowrap;
+    margin-top: 30px;
+}
+main .contactWrap #contact fieldset label .tel #contactTel {
+    width: 65px;
+    border-bottom: 1px solid #ccc;
+}
+main .contactWrap #contact fieldset label .tel #contactTel:nth-child(1) {
+    margin-right: 15px;
+}
+main .contactWrap #contact fieldset label .tel #contactTel:nth-child(2) {
+    margin: 0 15px;
+}
+main .contactWrap #contact fieldset label .tel #contactTel:nth-child(3) {
+    margin-left: 15px;
+}
+main .contactWrap #contact fieldset label #contactTxt {
+    border-bottom: 1px solid #ccc;
+    border-left: none; border-right: none; border-top: none;
+    padding: 15px 0;
+    max-width: 1250px;
+    color: #4f4f4f; font-weight: 500;
+
+}
+main .contactWrap #contact fieldset .writing {
+    display: flex; justify-content: center;
+    margin: 30px 0 50px 0;
+}
+main .contactWrap #contact fieldset .writing .writingBtn {
+    color: #4f4f4f; font-size: 0.75rem;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+main .contactWrap #contact fieldset .writing .writingBtn:hover {
+    color: #fff; background: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    transition: 0.5s;
+}

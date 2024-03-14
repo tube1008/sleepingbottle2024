@@ -1,0 +1,1159 @@
+/* 로그인 팝업 */
+.loginPop { /* ----------------------아이디,비번찾기, 배송조회---------------------------!! */
+    width: 100%; height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    position: relative; z-index: 950;
+    position: fixed;
+    display: none;
+}
+.loginPop .login {
+    max-width: 370px; background-color:#fff;
+    padding: 24px; 
+    border-radius: 5px;
+    position: absolute; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    display: none;
+}
+.loginPop .login .top {text-align: center; position: relative;}
+.loginPop .login .top h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+}
+.loginPop .login .top .closeLogin {
+    position: absolute; right: 1px; top: 1px;
+} 
+.loginPop .login .top .closeLogin img {height: 20px;} 
+.loginPop .login #loginPage {width: 310px;}
+.loginPop .login #loginPage fieldset {}
+.loginPop .login #loginPage fieldset .idPwfrm {
+    border: 1px solid #eee; margin: 20px 0;
+}
+.loginPop .login #loginPage fieldset .idPwfrm #frmId {
+    width: 100%;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+.loginPop .login #loginPage fieldset .idPwfrm #frmPw {
+    width: 100%; 
+    padding: 12px 16px;
+
+}
+.loginPop .login #loginPage fieldset label {}
+.loginPop .login #loginPage fieldset label #chkBtn {display: none;}
+.loginPop .login #loginPage fieldset label #chkBtn + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: -2px;
+}
+.loginPop .login #loginPage fieldset label #chkBtn:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: -2px;
+}
+.loginPop .login #loginPage fieldset label span {
+    font-size: 0.75rem; font-weight: 500; color: #212121; 
+    cursor: pointer;
+    position: relative; left: 20px;
+}
+.loginPop .login #loginPage fieldset .loginSel:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+.loginPop .login #loginPage fieldset .loginSel {
+    font-size: 0.875rem; font-weight: 500;
+    height: 40px; color: #4f4f4f; 
+    border: 1px solid #d4d4d4;
+    padding: 10px 20px; 
+    display: block; text-align: center;
+    margin-top: 10px;
+}
+.loginPop .login #loginPage fieldset .joinSearch {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+.loginPop .login #loginPage fieldset .joinSearch .joinGo,
+.loginPop .login #loginPage fieldset .joinSearch .idPwfind {
+    font-size: 0.75rem; color: #000; font-weight: 500;
+}
+.loginPop .login #loginPage fieldset > span::after {
+    content: ''; display: inline-block;
+    width: 310px ; height: 1px;
+    background-color: #d4d4d4;
+}
+.loginPop .login #loginPage fieldset .top span {
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 120px; top: 5px;
+}
+.loginPop .login #loginPage fieldset .bottom span {
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 145px; bottom: 75px;
+}
+.loginPop .login #loginPage fieldset span {}
+.loginPop .login #loginPage fieldset span span {
+    font-size: 0.75rem; font-weight: 500;
+    display: flex; justify-content: center;
+}
+.loginPop .login #loginPage fieldset a {}
+.loginPop .login #loginPage fieldset .naverAndKakao {
+    display: flex; flex-flow: column nowrap; margin: 20px 0 0 0;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver {
+    background: #27d34a; height: 42px; padding: 10px 25px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao {
+    background: #ffeb00; height: 42px; padding: 10px 25px; margin: 10px 0;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver img, 
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 14px; padding-right: 65px;}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver span {color: #fff;font-size: 0.875rem;}
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao span {color: #000;font-size: 0.875rem;}
+.loginPop .login #loginPage fieldset .nonShipping {
+    display: flex; justify-content: center;
+    font-size: 0.875rem; color: #fff;
+    padding: 10px 25px; background: #8393A7;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+/* 아이디 비밀번호 찾기 */
+.loginPop .searchBox {
+    max-width: 370px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    display: none;
+}
+.loginPop .searchBox .title {
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+.loginPop .searchBox .title .titleId,
+.loginPop .searchBox .title .titlePw {
+    color: #212121; font-size: 0.938rem;
+    font-weight: 700; padding: 15px;
+}
+.loginPop .searchBox .title .titleId {text-align: center;}
+.loginPop .searchBox .title .titlePw {display: none;}
+.loginPop .searchBox .title .closeIdpw {text-align: center;}
+.loginPop .searchBox .title .closeIdpw img {
+    height: 20px;
+    position: absolute; right: 20px; top: 15px;
+}
+.loginPop .searchBox .searchIdPw {
+    padding: 24px; padding-bottom: 0px;
+    display: flex; justify-content: center;
+}
+.loginPop .searchBox .searchIdPw .searchIdd {
+    border: 1px solid #212121; border-bottom: none;
+}
+.loginPop .searchBox .searchIdPw .searchIdd {
+    border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;;
+    background: #eee;
+}
+.loginPop .searchBox .searchIdPw a h2 {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 15px 30px;
+}
+.loginPop .searchBox .searchIdPw {
+    padding: 24px; padding-bottom: 0px;
+    display: flex; justify-content: center;
+}
+.loginPop .searchBox .searchIdPw .searchPww {
+    border: 1px solid #212121; border-bottom: none;
+}
+.loginPop .searchBox .searchIdPw .searchPww {
+    /* border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;;
+    background: #eee; */
+}
+.loginPop .searchBox .searchIdPw a h2 {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 15px 30px;
+}
+.loginPop .searchBox .searchIdPw a h2 {}
+.loginPop .searchBox .searchIdPw a h2 {}
+/* 아이디 찾기 */
+.loginPop .searchBox {
+    display: none;
+}
+.loginPop .searchBox #idpwBox {} 
+.loginPop .searchBox #idpwBox fieldset {}
+.loginPop .searchBox #idpwBox fieldset .searchId {
+    padding: 24px;
+    display: flex; flex-flow: column nowrap;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId > span {
+    font-size: 0.813rem; color: #21212199; font-weight: 500;
+    text-align: center;
+    padding: 16px 0 25px 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label {}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {display: none;}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {}
+.loginPop .searchBox #idpwBox fieldset .searchId .email,
+.loginPop .searchBox #idpwBox fieldset .searchId .numName {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 5px 0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .numName {
+    margin-top: 15px;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .email label span,
+.loginPop .searchBox #idpwBox fieldset .searchId .numName label span {    
+    display: block;
+    font-size: 0.75rem; font-weight: 500;
+    color: #212121; 
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative; left: 20px;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .email #emailId {
+    width: 100%;
+    font-size: 0.75rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .numName #userName {
+    width: 100%;
+    font-size: 0.75rem; font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0; 
+    border-bottom: none;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .numName #phNumber {
+    width: 100%;
+    font-size: 0.75rem; font-weight: 500; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .findIdPw {
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+    margin-top: 15px;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .findIdPw:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+/* 비밀번호찾기 */
+.loginPop .searchBox #idpwBox fieldset .searchPw {
+    padding: 24px;
+    display: flex; flex-flow: column nowrap;
+    display: none; /* --------------------none----------------------------!! */
+} 
+.loginPop .searchBox #idpwBox fieldset .searchPw #joinId {
+    width: 100%;
+    font-size: 0.75rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchPw .findPwId {
+    display: block;
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
+.loginPop .searchBox #idpwBox fieldset .searchPw .findPwId:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+/* 비회원 배송 조회 */
+.loginPop .nondelivery {
+    background-color: #fff;
+    width: 370px; height: 260px;
+    padding: 32px 24px;
+    border-radius: 5px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    display: none;
+}
+.loginPop .nondelivery .title {
+    position: relative;
+}
+.loginPop .nondelivery .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 30px;
+}
+.loginPop .nondelivery .title .closeDeli {
+    position: absolute; right: 0; top: 0;
+}
+.loginPop .nondelivery .title .closeDeli img {
+    height: 20px;
+}
+.loginPop .nondelivery #delivery {
+}
+.loginPop .nondelivery #delivery fieldset {
+    display: flex; flex-flow: column nowrap;
+}
+.loginPop .nondelivery #delivery fieldset #orderNum {
+    font-size: 0.75rem; font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0; 
+    border-bottom: none;
+}
+.loginPop .nondelivery #delivery fieldset #adressNum {
+    font-size: 0.75rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0;
+}
+.loginPop .nondelivery #delivery fieldset a {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
+.loginPop .nondelivery #delivery fieldset a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+/* 회원가입 팝업창 */
+.joinWrap {
+    width: 100%; height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    position: relative; z-index: 950;
+    position: fixed;
+    display: none;
+}   
+.joinWrap .joinPop {
+    max-width: 370px; height: 324px;
+    background-color:#fff;
+    border-radius: 5px;
+    display: flex; flex-flow: column nowrap;
+    padding: 24px;
+    border-radius: 5px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
+}
+.joinWrap .joinPop .title {position: relative;}
+.joinWrap .joinPop .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; 
+    margin-bottom: 40px;
+}
+.joinWrap .joinPop .title .joinCloseBtn {}
+.joinWrap .joinPop .title .joinCloseBtn img {
+    height: 20px;
+    position: absolute; left: 305px; top: 5px;
+}
+.joinWrap .joinPop > a {
+    background-color: #fff;
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    display: flex; justify-content: center;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+.joinWrap .joinPop > a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+.joinWrap .joinPop .joinHr::after  {
+    content: ''; display: inline-block;
+    width: 322px ; height: 1px;
+    background-color: #d4d4d4;
+}
+.joinWrap .joinPop .joinHr {}
+.joinWrap .joinPop .joinHr span {
+    font-size: 0.875rem;
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 150px; top: 153px;
+}
+.joinWrap .joinPop .naverKaKao {
+    margin-top: 30px;
+}
+.joinWrap .joinPop .naverKaKao .naver {
+    background: #27d34a; height: 42px; padding: 10px 25px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-bottom: 10px;
+}
+.joinWrap .joinPop .naverKaKao .kakao {
+    background: #ffeb00; height: 42px; padding: 10px 25px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.joinWrap .joinPop .naverKaKao .naver img {
+    height: 14px; margin-right: 65px;
+}
+.joinWrap .joinPop .naverKaKao .kakao img {
+    height: 14px; margin-right: 65px;
+}
+.joinWrap .joinPop .naverKaKao .naver span {color: #fff; font-size: 0.875rem;}
+.joinWrap .joinPop .naverKaKao .kakao span {color: #000; font-size: 0.875rem;}
+/* 약관동의 */
+.joinWrap .terms {
+    max-width: 370px; height: 525px;
+    background: #fafafa;
+    padding-top: 20px;
+    border-radius: 5px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    display: none; /* --------------------none----------------------------!! */
+}
+.joinWrap .terms .container {}
+.joinWrap .terms .container .title {position: relative;}
+.joinWrap .terms .container .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 20px;
+}
+.joinWrap .terms .container .title .closeTerms {}
+.joinWrap .terms .container .title .closeTerms img {
+    height: 20px;
+    position: absolute; left: 320px; top: 5px;
+}
+.joinWrap .terms .container #terms {
+    padding: 24px;
+}
+/* 첫번째 체크박스 */
+.joinWrap .terms .container #terms fieldset {}
+.joinWrap .terms .container #terms fieldset .topchk {}
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll {display: none;}
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset label span {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; left: 20px; top: -22px;
+    cursor: pointer;
+}
+/* 두번째 체크박스 */
+.joinWrap .terms .container #terms fieldset .mainChk1 {}
+.joinWrap .terms .container #terms fieldset .mainChk1 label {}
+.joinWrap .terms .container #terms fieldset .mainChk1 label #chkAllone {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAllone + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset label #chkAllone:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 label span {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; top: 0px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 label span em {
+    font-size: 0.75rem; color: #f84a71; padding-left: 5px; font-weight: 600;
+}
+/* 이용약관 텍스트 박스 */
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox {
+    border: 1px solid #dfe0df; overflow-y: auto;
+    height: 100px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox h2 {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox p {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
+/* 개인정보 동의 텍스트 박스 */
+/* 세번째 체크박스 */
+.joinWrap .terms .container #terms fieldset .mainChk2 {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label{}
+.joinWrap .terms .container #terms fieldset .mainChk2 label #chkAlltwo {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAlltwo + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset label #chkAlltwo:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; top: 15px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span em {
+    font-size: 0.75rem; color: #f84a71; padding-left: 5px; font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox {
+    border: 1px solid #dfe0df; overflow-y: auto;
+    height: 100px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    margin: 20px 0 5px 0;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox h2 {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 900;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label #chkAdult {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAdult + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset label #chkAdult:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span em {}
+.joinWrap .terms .container #terms fieldset .selectBtn {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-top: 35px;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .resetBtn {
+    color: #4f4f4f; font-weight: 500;
+    padding: 15px 60px;
+    border: 1px solid #dfe0df;
+    text-align: center;
+    margin-right: 3px;
+    letter-spacing: 3px;
+    font-size: 0.875rem;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .resetBtn:hover {
+    background: rgba(247,247,247,1);
+    transition: 0.3s;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
+    padding: 15px 50px;
+    border: 1px solid #dfe0df;
+    font-size: 0.875rem;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {
+    color: #4f4f4f; 
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn:hover {
+    background: #4f4f4f;
+    color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s;
+}
+/* 회원가입 */
+.signContainer {/* ----------------------회원가입---------------------------!! */
+    width: 100%; height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    position: relative; z-index: 950;
+    position: fixed;
+    display: none; /* --------------------none----------------------------!! */
+}
+.signContainer .wrap {
+    background: #fff;
+    max-width: 370px;
+    border-radius: 5px;
+    padding: 24px;
+    position: relative; left: 50%; top: 10%;
+    transform: translateX(-50%);
+}
+.signContainer .wrap .title {
+    position: relative;
+}
+.signContainer .wrap .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 20px;
+}
+.signContainer .wrap .title .signCloseBtn {}
+.signContainer .wrap .title .signCloseBtn img {
+    height: 20px;
+    position: absolute; left: 300px; top: 5px;
+}
+.signContainer .wrap .container {position: relative;}
+.signContainer .wrap .container #signUp {}
+.signContainer .wrap .container #signUp fieldset {}
+.signContainer .wrap .container #signUp fieldset .photo {
+    margin-top: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .profile {}
+.signContainer .wrap .container #signUp fieldset .photo .profile img {
+    width: 80px;
+    border-radius: 50%;
+    position: relative; left: 120px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption{}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage {
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    border-radius: 50%; 
+    width: 30px; height: 30px;
+    position: absolute; left: 175px; top: 65px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings {
+    border: 1px solid #E5E5E5;
+    background: #fff;
+    width: 100px;
+    display: flex; flex-flow: column nowrap; text-align: center; align-items: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    position: absolute; left: 155px; top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* --------------------none----------------------------!! */
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .revise {
+    font-size: 0.875rem; color: #212121;
+    padding-bottom: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .delete {
+    font-size: 0.875rem; color: #212121;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage img{
+    position: relative; left: 6px; top: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .revise img {
+    position: relative; top: 4px;
+    padding-right: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .delete img {
+    position: relative; top: 3px; left: -1px;
+    padding-right: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .idPw {
+    display: flex; flex-flow: column nowrap;
+    margin: 20px 0;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #email {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #pw {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    border-top: none; border-bottom: none;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #rePw {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+}
+.signContainer .wrap .container #signUp fieldset .name {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .name h2 {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .name #userName {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .gender {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .gender h2 {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .gender label {padding: 3px;}
+.signContainer .wrap .container #signUp fieldset .gender label #maleChk {display: none;}
+.signContainer .wrap .container #signUp fieldset .gender label #maleChk + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.signContainer .wrap .container #signUp fieldset .gender label #maleChk:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.signContainer .wrap .container #signUp fieldset .gender label span {
+    position: relative; left: 15px; 
+}
+.signContainer .wrap .container #signUp fieldset .gender label #femaleChk {display: none;}
+.signContainer .wrap .container #signUp fieldset .gender label #femaleChk + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.signContainer .wrap .container #signUp fieldset .gender label #femaleChk:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: -2px;
+}
+.signContainer .wrap .container #signUp fieldset .gender label span {}
+.signContainer .wrap .container #signUp fieldset .gender label span,
+.signContainer .wrap .container #signUp fieldset .gender label span {
+    color: #212121;
+    font-size: 0.75rem; font-weight: 600;
+    margin: 0 5px 5px;
+    cursor: pointer;
+}
+.signContainer .wrap .container #signUp fieldset .num {
+    display: flex; flex-flow: column nowrap; margin-top: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .num h2 {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .num #userNumber {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset h2 {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .birth {
+    display: flex; justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .birth .year {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px;
+    margin-right: 5px; 
+}
+.signContainer .wrap .container #signUp fieldset .birth .year option {}
+.signContainer .wrap .container #signUp fieldset .birth .month {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px; 
+    margin-right: 5px; 
+}
+.signContainer .wrap .container #signUp fieldset .birth .month option {
+    font-size: 0.875rem; color: #212121;
+}
+.signContainer .wrap .container #signUp fieldset .birth .day {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px;  
+}
+.signContainer .wrap .container #signUp fieldset .birth .day option {}
+.signContainer .wrap .container #signUp fieldset .sign {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .sign #signUpBtn {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 600;
+    background: #fff;
+    border: 1px solid #dfe0df;
+    padding: 10px 25px; 
+}
+.signContainer .wrap .container #signUp fieldset .sign #signUpBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
+/* 일회성 광고창 */
+.popUp {max-width: 1920px; position: relative;}
+.popUp .couponTop {}
+.popUp .couponTop img {}
+.popUp .close {
+    display: flex; flex-flow: row nowrap;
+    position: absolute; right: 0; top: 0;
+    align-items: center;
+    margin: 5px 10px 0;
+}
+.popUp .close span {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 0.875rem; color: #212121;
+}
+.popUp .close .closePop {width: 30px;}
+/* header */
+header {
+    max-width: 1920px;
+    padding:10px 50px 100px 20px; height:100px;
+    position:sticky; left:0; top:0px; width:100%; z-index:900;
+    background: rgba(255, 255, 255, 0.6)
+}
+/* 태블릿, 모바일 */
+header .mMenuWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0; top: 0; z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    display: none; /* --------------------none----------------------------!! */
+} 
+header .mMenuWrap .mMenuLeft {
+    width: 300px; background: #fff;
+    height: 100vh;
+    position: fixed; z-index: 999;
+}
+header .mMenuWrap .mMenuLeft .mLogin {
+    height: 68px;
+    color: #fff;
+    padding: 20px;
+    background: #2b2b2b;
+    display: flex; align-items: center;
+}
+header .mMenuWrap .mMenuLeft nav {}
+header .mMenuWrap .mMenuLeft nav .gnb {}
+header .mMenuWrap .mMenuLeft nav .gnb > li {
+    font-size: 0.875rem; color: #212121E3;
+    padding: 13px 50px 0px 20px;
+    border-bottom: 1px solid #e5e7eb;;
+}
+header .mMenuWrap .mMenuLeft nav .gnb li a {display: block; padding-bottom: 10px; align-items: center;}
+header .mMenuWrap .mMenuLeft nav .gnb li a img {}
+header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(1) a img {position: relative; left: 200px; top: 1px;}
+header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(5) a img {position: relative; left: 185px; top: 1px;}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {
+    padding: 10px 50px 10px 30px;
+}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {
+    font-size: 0.813rem; color: #212121E3;
+}
+header .mMenuWrap .mMenuLeft .language {
+    padding: 15px 20px; 
+    position: absolute; left: 10px; bottom: 20px;
+}
+header .mMenuWrap .mMenuLeft .language .lang {position: relative;}
+header .mMenuWrap .mMenuLeft .language .lang .langsSelect {
+    font-size: 0.75rem; font-weight: 600;
+    color: #212121E3;
+    display: flex; align-items: center;
+    padding-right: 5px;
+}
+header .mMenuWrap .mMenuLeft .language .lang .langsSelect img {padding-right: 5px;}
+header .mMenuWrap .mMenuLeft .language .lang .selectBtn {position: absolute; left: 60px; top: -2px;}
+header .mMenuWrap .mMenuLeft .language .lang .selectBtn img {width: 10px;}
+header .mMenuWrap .mMenuLeft .language .langOpen {
+    display: flex; flex-flow: column nowrap; 
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    position: relative; top: -95px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     /* --------------------none----------------------------!! */
+}
+header .mMenuWrap .mMenuLeft .language .langOpen .langKo {
+    font-size: 0.875rem;
+    color: #212121;
+    padding-bottom: 10px;}
+header .mMenuWrap .mMenuLeft .language .langOpen .langEn {
+    font-size: 0.875rem;
+    color: #212121;
+}
+header .mMenuWrap .mMenuLeft .closeBtn {
+    position: absolute; left: 320px; top: 23px;
+}
+header .mMenuWrap .mMenuLeft .closeBtn img {width: 16px;}
+/* 데스크탑 메뉴 */
+header .mainMenu {
+    display: flex; flex-flow: row nowrap; margin: 0 auto;
+    justify-content: space-between; align-items: center;
+    margin: 30px 30px;
+    position: relative; top: -13px;
+    
+}
+/* 태블릿, 모바일 메뉴 (햄버거) */
+header .mainMenu .mMenu {display: none;} /* --------------------none----------------------------!! */
+header .mainMenu .mMenu img {max-width: 18px;}
+/* 태블릿, 모바일 메인로고 */
+header .mainMenu .mLogo {display: none;} /* --------------------none----------------------------!! */
+header .mainMenu .mLogo a {}
+header .mainMenu .mLogo a img {max-width: 135.4px;}
+/* 데스크탑 메인로고 */
+header .mainMenu .dLogo {}
+header .mainMenu .dLogo a {}
+header .mainMenu .dLogo a img {max-width: 103.16px;}
+/* 데스크탑 메인 카테고리 */
+header .mainMenu nav {}
+header .mainMenu nav .gnb {
+    display: flex; flex-flow: row nowrap; 
+}
+header .mainMenu nav .gnb li {}
+header .mainMenu nav .gnb li a { 
+    font-size: 0.938rem; letter-spacing: 2px; font-family: 'Cardo', serif;
+    color: #212121; padding: 0 30px;
+}
+header .mainMenu nav .gnb li .lnb {
+    position: absolute; z-index: 100;  /* --------------------none----------------------------!! */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+header .mainMenu nav .gnb li:hover .lnb {
+    display: block;
+    opacity: 1;
+}
+header .mainMenu nav .gnb li .lnb li {
+    background-color: #fff;     
+    color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
+}
+
+header .mainMenu nav .gnb li .lnb li:nth-child(1) {
+    border-top-right-radius: 5px; border-top-left-radius: 5px;
+    border-bottom: none; margin-top: 10px;
+}
+header .mainMenu nav .gnb li:nth-child(1) .lnb li:nth-child(2) {
+    border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+    position: relative; 
+}
+header .mainMenu nav .gnb li:nth-child(5) .lnb li:nth-child(2) {
+    border-bottom: none; 
+}
+header .mainMenu nav .gnb li:nth-child(5) .lnb {
+    width: 150px;
+}
+header .mainMenu nav .gnb li .lnb li:nth-child(3) {
+    border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+}
+header .mainMenu nav .gnb li .lnb li a {
+    font-size: 0.9rem; color: #212121;
+}
+header .mainMenu .menuRight {
+    display: flex; flex-flow: row nowrap; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 0.813rem;
+}
+/* 태블릿, 모바일 메뉴 동일 */
+header .mainMenu .menuRight #login {}
+header .mainMenu .menuRight #login:last-child {padding: 0;}
+header .mainMenu .menuRight > #login::after {
+    content: ''; display: inline-block;
+    width: 1px ; height: 10px;
+    background: #4f4f4f;
+    margin: 0 15px;
+}
+header .mainMenu .menuRight #login:hover,
+header .mainMenu .menuRight .advertise #join:hover {
+    opacity: 50%;
+    transition: 0.3s;
+}
+header .mainMenu .menuRight .advertise {position: relative;}
+/* 태블릿, 모바일 모드에서 join 없어짐 */
+header .mainMenu .menuRight .advertise #join {}
+header .mainMenu .menuRight .advertise .couponBtn::before {
+    content: ''; display: inline-block;
+    width: 10px; height: 10px;
+    background: #4f4f4f; 
+    position: absolute; left: 60px; top: -5px;
+    transform: rotate(45deg);
+}
+header .mainMenu .menuRight .advertise .couponBtn {
+    width: 125.36px; background: #4f4f4f;
+    font-size: 0.75rem; color: #fff;
+    position: absolute; right: -50px; top: 25px; 
+    border-radius: 5px; padding: 5px 8px;
+    animation: moveUpDown 0.4s linear infinite alternate;
+}
+@keyframes moveUpDown {
+    from {
+        top: 25px;
+    }
+    to {
+        top: 30px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* footer */
+footer {width: 100%;}
+footer .top {
+    border-top: 1px solid #4f4f4f;
+    margin: 30px auto;
+    max-width: 1280px;
+}
+footer .top p:nth-child(1) {}
+footer .top p:nth-child(3),
+footer .top p:nth-child(4) {opacity: 0.3;}
+footer .top h2 {
+    font-family: 'Cardo', serif; font-size: 1.875rem; color: #4f4f4f; 
+    padding: 20px 0;
+}
+footer .top p {font-size: 0.75rem; margin-bottom: 5px; align-items: center;}
+footer .top p img {height: 11px; text-align: center; margin-right: 5px;}
+footer .top p strong {font-size: 1.5rem; color: #4f4f4f;}
+footer .bottomBg {background: #fafafa; padding: 10px 0;}
+footer .bottomBg .bottom {
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+    margin: 30px auto;
+    max-width: 1280px;
+}
+footer .bottomBg .bottom .add {padding-bottom: 20px;}
+footer .bottomBg .bottom .add a:nth-child(3) {font-weight: 700;}
+footer .bottomBg .bottom .add a {font-size: 0.75rem; color: #3B3B3B; margin:0 15px 10px 0;}
+footer .bottomBg .bottom .add a:hover {
+    opacity: 70%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
+footer .bottomBg .bottom .add .sns {position: absolute; right: 550px;}
+footer .bottomBg .bottom .add .sns .instagram {}
+footer .bottomBg .bottom .add .sns .instagram:hover {
+    opacity: 60%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
+footer .bottomBg .bottom .add .sns .youTube {}
+footer .bottomBg .bottom .add .sns .youTube:hover {
+    opacity: 60%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
+footer .bottomBg .bottom .add .sns .instagram img {height: 20px;}
+footer .bottomBg .bottom .add .sns .youTube img {height: 20px;}
+footer .bottomBg .bottom p {}
+footer .bottomBg .bottom .addTitle {
+    color: #3B3B3B; margin-bottom: 10px; font-weight: 500;
+}
+footer .bottomBg .bottom address {
+    font-size: 0.75rem; color: #696969; line-height: 1.7; letter-spacing: 0.7px;
+}
+footer .bottomBg .bottom address a {color: #696969;}
+footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
+/* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
+/* 이용약관 */
+
+.btmTerms {} /* --------------------none----------------------------!! */
+.btmTerms .term {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed; left: 0; top: 0;
+    z-index: 999;    
+    width: 100vw; height: 100vh; 
+    overflow-y: scroll;
+    display: none;
+}
+.btmTerms .term .utiliTitle {    
+    position: relative; left: 35%;
+    display: none; /* --------------------none----------------------------!! */
+} 
+.btmTerms .term .utiliTitle .utiliBody {
+    background: #fff;
+    max-width: 600px;
+    padding: 20px 0; border-radius: 5px; 
+}
+.btmTerms .term .utiliTitle .utiliBody .top{
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 5px 25px;
+}
+.btmTerms .term .utiliTitle .utiliBody .top h1 {
+    font-size: 1.125rem; color: #212121; font-weight: 500;
+    padding-bottom: 30px; 
+}
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn01 {}
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn01 img {height: 20px;}
+.btmTerms .term .utiliTitle .utiliBody h2, p {
+    font-size: 0.75rem; color: #212121;
+}
+.btmTerms .term .utiliTitle .utiliBody h2 {padding: 15px 24px; font-weight: 500;}
+.btmTerms .term .utiliTitle .utiliBody p {padding: 0 24px; line-height: 1.5;}
+/* 개인정보처리방침 */
+.btmTerms .term .policyTitle {
+    position: relative; left: 35%;
+    display: none;
+}
+.btmTerms .term .policyTitle .policyBody {
+    padding: 20px 0; border-radius: 5px;
+    max-width: 600px; background-color:#fff;
+}
+.btmTerms .term .policyTitle .policyBody .top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 5px 25px;
+}
+.btmTerms .term .policyTitle .policyBody .top h1 {
+    font-size: 1.125rem; color: #212121; font-weight: 500;
+    padding-bottom: 30px;
+}
+.btmTerms .term .policyTitle .policyBody .top .closeBtn02 {}
+.btmTerms .term .policyTitle .policyBody .top .closeBtn02 img {height: 20px;}
+.btmTerms .term .policyTitle .policyBody h2, p {
+    font-size: 0.75rem; color: #212121;
+}
+.btmTerms .term .policyTitle .policyBody h2 {padding: 15px 24px; font-weight: 500;}
+.btmTerms .term .policyTitle .policyBody p {padding: 0 24px; line-height: 1.5;}

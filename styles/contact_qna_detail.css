@@ -1,0 +1,84 @@
+main {}
+main .title {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+main .title h1 {
+    color: #4A4A4A; font-size: 1.25rem; font-weight: 500;
+}
+main .title .right {}
+main .title .right a {
+    font-size: 0.75rem; font-weight: 500;
+    padding: 7px 15px; border-radius: 5px;
+}
+main .title .right a:nth-child(1) {
+    color: #4f4f4f;
+    border: 1px solid #d3d3d3;
+}
+main .title .right a:nth-child(2) {
+    color: #fff; background: #4f4f4f;
+    border: 1px solid #4f4f4f;
+}
+main .container {
+    display: flex; flex-flow: row nowrap;
+}
+main .container .leftImage {
+    width: 250px; height: 100vh;
+    background: #fafafa;
+    border-right: 1px solid #ccc;
+}
+main .container .leftImage p {
+    font-size: 0.875rem; color: #333; font-weight: 600;
+    padding: 20px;
+}
+main .container .rightWriting {
+    width: 1000px; margin: 0 auto;
+    padding-top: 50px;
+}
+main .container .rightWriting #writing {}
+main .container .rightWriting #writing fieldset {}
+main .container .rightWriting #writing fieldset .personalInfo {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    
+}
+main .container .rightWriting #writing fieldset .personalInfo .personalData {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+main .container .rightWriting #writing fieldset .personalInfo .personalData p {}
+main .container .rightWriting #writing fieldset .personalInfo .personalData p img{
+    width: 36px; border-radius: 50%;
+}
+main .container .rightWriting #writing fieldset .personalInfo .personalData #name {
+    width: 200px; font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+main .container .rightWriting #writing fieldset .personalInfo .personalData #pw {
+    width: 200px; font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 10px;
+}
+main .container .rightWriting #writing fieldset .personalInfo .secretPost {}
+main .container .rightWriting #writing fieldset .personalInfo .secretPost .unlock {
+    width: 22px; height: 23px;
+}
+main .container .rightWriting #writing fieldset .personalInfo .secretPost .lock {
+    width: 22px; height: 23px; display: none;
+}
+main .container .rightWriting #writing fieldset .txtArea {
+    width: 900px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; 
+}
+main .container .rightWriting #writing fieldset .txtArea #title {
+    font-size: 1.25rem; font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 50px 0 20px 0;
+    line-height: 1.5;
+}
+main .container .rightWriting #writing fieldset .txtArea #textArea {
+    font-size: 1.5rem;
+    border: none; resize: none;
+}
