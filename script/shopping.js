@@ -1,3 +1,10 @@
+// const all_a = document.querySelectorAll('body a')
+// for(let i of all_a){
+//     i.addEventListener('click',(e)=>{
+//         e.preventDefault()
+//     })
+// }
+
 // sohpping area
 
 const detailInfo = document.querySelector('.detailInfo')
@@ -49,7 +56,7 @@ login_access.style.display = 'none'
 
 cart.addEventListener('click',(e)=>{
     selectShop.style.display = 'flex'
-    e.preventDefault
+    e.preventDefault()
 })
 
 buyNow.addEventListener('click',(e)=>{
@@ -123,4 +130,63 @@ copyButton.addEventListener('click', function () {
     alert('주소가 복사되었습니다.');
 });
 
+// 상품 옵션 클릭
 
+const white = document.querySelector ('.white')
+const gray = document.querySelector ('.gray')
+const selectTotalResult = document.querySelector ('.productPrice')
+const selectResult = document.querySelector ('.productPrice .selectResult')
+console.log (white, gray, selectResult, selectTotalResult)
+
+const priceView = document.querySelectorAll('.orderPrice')
+const priceTotalView = document.querySelector('.priceTotalView')
+const numView = document.querySelectorAll('#numCount')
+const minus = document.querySelectorAll('#minus')
+const plus = document.querySelectorAll('#plus')
+console.log (priceView, priceTotalView, numView, minus, plus)
+let num = 1;
+let total = 0;
+let result = 0;
+let price = 159000;
+priceTotalView.innerHTML = `${price * 2}`
+
+
+
+
+plus[0].addEventListener('click',()=>{
+    // console.log (typeof price)
+    num++
+    numView[0].value = num;
+    total = num*price;
+    priceView[0].innerHTML = total.toLocaleString('ko-kr')+'원'
+    total = num*price
+    console.log(total)
+    priceTotalView.innerHTML = total
+})
+
+minus[0].addEventListener('click',()=>{
+    if(num > 1 ){
+        num--
+        numView[0].value = num;
+        total = num*price;
+        priceView[0].innerHTML = total.toLocaleString('ko-kr')+'원'
+
+    }
+})
+
+plus[1].addEventListener('click',()=>{
+    console.log (typeof price)
+    num++
+    numView[1].value = num;
+    total = num*price;
+    priceView[1].innerHTML = total.toLocaleString('ko-kr')+'원'
+})
+
+minus[1].addEventListener('click',()=>{
+    if(num > 1 ){
+        num--
+        numView[1].value = num;
+        total = num*price;
+        priceView[1].innerHTML = total.toLocaleString('ko-kr')+'원'
+    }
+})
