@@ -271,7 +271,7 @@ main section .shopInfo .infoWrap .container .choice .color .white .wh {
     padding: 3px;
     border-radius: 3px;
     text-align: center;
-    position: absolute; top: 35px; left: -35px;
+    position: absolute; top: 35px; left: -35px; z-index: 999;
     display: none;
 }
 main section .shopInfo .infoWrap .container .choice .color .white:hover .wh {
@@ -293,7 +293,7 @@ main section .shopInfo .infoWrap .container .choice .color .gray .gr {
     padding: 3px;
     border-radius: 3px;
     text-align: center;
-    position: absolute; top: 35px; left: -3px;
+    position: absolute; top: 35px; left: -3px; z-index: 999;
     display: none;
 }
 main section .shopInfo .infoWrap .container .choice .color .gray:hover .gr {

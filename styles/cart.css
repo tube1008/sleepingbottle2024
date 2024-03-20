@@ -96,10 +96,6 @@ main section .cartWrap .productDetail .product .detail .productTilte .option p .
     font-size: 0.813rem;
     color: #4f4f4f;
 }
-main section .cartWrap .productDetail .product .detail .productTilte .option .closeBtn02 {}
-main section .cartWrap .productDetail .product .detail .productTilte .option .closeBtn02 img {
-    width: 15px;
-}
 main section .cartWrap .productDetail .qt {
     text-align: center;
     width: 189px;

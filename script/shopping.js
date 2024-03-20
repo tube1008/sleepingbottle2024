@@ -111,12 +111,14 @@ const sharing = document.querySelector('.sharing')
 const sharingBtn = document.querySelector('.sharingBtn')
 console.log(share, sharing, sharingBtn)
 
-share.addEventListener('click',function(){
+share.addEventListener('click',function(e){
     sharing.style.display = 'flex'
+    e.preventDefault()
 })
 
-sharingBtn.addEventListener('click',function(){
+sharingBtn.addEventListener('click',function(e){
     sharing.style.display = 'none'
+    e.preventDefault()
 })
 
 //공유하기 에서 복사버튼을 클릭했을때 주소가 복사가 되는 기능
@@ -143,15 +145,29 @@ const priceTotalView = document.querySelector('.priceTotalView')
 const numView = document.querySelectorAll('#numCount')
 const minus = document.querySelectorAll('#minus')
 const plus = document.querySelectorAll('#plus')
+const shopClosebtn = document.querySelector ('.shopClosebtn')
 console.log (priceView, priceTotalView, numView, minus, plus)
 let num = 1;
 let total = 0;
 let result = 0;
 let price = 159000;
-priceTotalView.innerHTML = `${price * 2}`
+priceTotalView.innerHTML = `${price * 1}`
 
+selectTotalResult.style.display = 'none'
 
+gray.addEventListener('click',function(e){
+    selectTotalResult.style.display = 'block'
+    e.preventDefault()
+})
 
+shopClosebtn.addEventListener('click',function(e){
+    selectTotalResult.style.display = 'none'
+    e.preventDefault()
+})
+
+white.addEventListener('click',function(){
+    window.alert('품절된 상품입니다.');
+})
 
 plus[0].addEventListener('click',()=>{
     // console.log (typeof price)
@@ -190,3 +206,5 @@ minus[1].addEventListener('click',()=>{
         priceView[1].innerHTML = total.toLocaleString('ko-kr')+'원'
     }
 })
+
+
