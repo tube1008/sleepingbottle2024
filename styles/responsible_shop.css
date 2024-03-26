@@ -1,0 +1,15 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1299px){
+    main .product .productPage {}
+    main .product .productPage .item p img {width: 400px;}
+    main .product .productPage .item {width: 100%;}
+}
+@media screen and (max-width: 999px){
+    main .product .productPage .item p img {width: 350px;}
+}
+@media screen and (max-width: 799px){
+    main .product .productPage .item p img {width: 250px;}
+}
+@media screen and (max-width:600px){
+}

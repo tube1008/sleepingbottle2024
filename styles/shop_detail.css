@@ -152,9 +152,10 @@ main section {
     width: 100%;
 }
 main section .stage {
-    width: 1250px; margin: 0 auto;
+    margin: 0 auto;
     display: flex; align-items: center;
     margin-bottom: 15px;
+    padding-left: 40px;
 }
 main section .stage a {
     font-size: 0.75rem;
@@ -167,10 +168,11 @@ main section .stage img {
     height: 11px;
 }
 main section .shopInfo {
+    width: 100%; margin: 0 auto;
     display: flex; flex-flow: row nowrap;
-    justify-content: center;
+    padding: 0 40px;
 }
-main section .shopInfo .shopImg {}
+main section .shopInfo .shopImg {width: 100%;}
 main section .shopInfo .shopImg .bigThumbnail {}
 main section .shopInfo .shopImg .bigThumbnail img {width: 610px;}
 main section .shopInfo .shopImg .smallThumbnail {
@@ -178,7 +180,7 @@ main section .shopInfo .shopImg .smallThumbnail {
 }
 main section .shopInfo .shopImg .smallThumbnail img {width: 60px; margin-top: 10px; cursor: pointer;}
 main section .shopInfo .infoWrap {
-    margin: 10px 0 0 113px;
+    margin: 10px 0 0 20px;
 }
 main section .shopInfo .infoWrap .container {}
 main section .shopInfo .infoWrap .container .title {

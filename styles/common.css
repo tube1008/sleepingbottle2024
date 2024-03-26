@@ -834,11 +834,11 @@
 /* 일회성 광고창 */
 .popUp {max-width: 1920px; position: relative;}
 .popUp .couponTop {}
-.popUp .couponTop img {}
+.popUp .couponTop img {width: 100%;}
 .popUp .close {
     display: flex; flex-flow: row nowrap;
-    position: absolute; right: 0; top: 0;
-    align-items: center;
+    position: absolute; right: 0%; top: 0;
+    align-items: center; justify-content: right;
     margin: 5px 10px 0;
 }
 .popUp .close span {

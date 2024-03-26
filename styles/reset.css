@@ -1,5 +1,5 @@
 
-body > * {min-width: 1920px !important;}
+body > * {min-width: 600px !important;}
 @font-face {
     font-family: NanumBarunGothic;
     src: url(../fonts/NanumBarunGothic.ttf);

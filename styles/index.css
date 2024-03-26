@@ -3,10 +3,11 @@ main {
     max-width: 1920px; margin: 0 auto;
 }
 main .productPage {
-    width: 100%; overflow-x: hidden;
+    width: 1920px; overflow-x: hidden;
+    
 }
 main .productPage #slide {
-    width: 100%; 
+    width: 100%;
     position: relative;
 }
 main .productPage #slide .pageWrapper {

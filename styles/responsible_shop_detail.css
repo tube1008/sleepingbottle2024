@@ -1,0 +1,71 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1299px){
+    main section .shopInfo .shopImg .bigThumbnail img {width: 550px;}
+    main section .detailImage img {
+        width: 1000px;
+    }
+}
+@media screen and (max-width:1199px){
+    main section .shopInfo .shopImg .bigThumbnail img {width: 500px;}
+    main section .detailImage img {
+        width: 850px;
+    }
+}
+@media screen and (max-width: 1099px){
+    main section .shopInfo .shopImg .bigThumbnail {
+        text-align: center; margin: 0 auto;
+    }
+    main section .shopInfo .shopImg .bigThumbnail img {
+        width: 900px;
+    }
+    main section .shopInfo {
+        display: flex; flex-flow: column nowrap;
+        justify-content: center; align-items: center;
+    }
+    main section .shopInfo .infoWrap {width: 70%;}
+    main section .detailImage img {
+        width: 850px;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .buyNow {
+        width: 32%;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .cart {
+        width: 32%;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .like {
+        width: 32%;
+    }
+    main section .shopInfo .infoWrap .container .purchase .naverpay .pay {
+        width: 850px;
+    }
+}
+@media screen and (max-width: 999px){
+    main section .shopInfo .infoWrap .container .purchase .buy .buyNow {
+        font-size: 0.678rem;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .cart {
+        font-size: 0.678rem;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .like {
+        font-size: 0.778rem;
+    }
+    main section .shopInfo .infoWrap .container .purchase .naverpay {display: none;}
+    main .shopInfo .infoWrap .container .purchase .naverpay .good {display: none;}
+    main section .detailImage img {
+        width: 800px;
+    }
+}
+@media screen and (max-width: 845px){
+    main section .shopInfo .infoWrap .container .purchase .buy .buyNow {
+        display: none;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .cart {
+        display: none;
+    }
+    main section .shopInfo .infoWrap .container .purchase .buy .like {
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+}

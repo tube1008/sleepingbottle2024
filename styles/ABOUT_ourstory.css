@@ -20,10 +20,12 @@ main .ourStory .topBg::before {
 main .ourStory .topBg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: -455px;
+    position: relative; left: -28%;
 }
 main .ourStory .topPage {}
-main .ourStory .topPage .firstSubject {}
+main .ourStory .topPage .firstSubject {
+    width: 100%; margin: 0 auto;
+}
 main .ourStory .topPage .firstSubject h2 {
     font-size: 2.25rem; color: #4f4f4f;
     font-family: 'Cardo', serif;

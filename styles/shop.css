@@ -1,6 +1,6 @@
 main {}
 main .product {
-    width: 100%; height: 100%;
+    width: 100%; margin: 0 auto;
     position: relative;
 }
 main .product .bg {
@@ -19,9 +19,10 @@ main .product .bg::before {
 main .product .bg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: 250px;
+    position: relative; left: 15%;
 }
 main .product .productPage {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     display: grid; 
@@ -29,19 +30,26 @@ main .product .productPage {
                     'item3 item4'
                     'item5 item6'
                     'item7 item8';
-    grid-template-columns: 650px 650px;
+    gap: 10px;
     justify-content: center;
 }
 main .product .productPage .item {
-    margin: 50px 30px;
+    margin: 50px 30px;  position: relative;
 }
 main .product .productPage .item p, h2, .md {text-align: left;}
 main .product .productPage .item p {
+    width: 100%;
     font-size: 1rem; margin-top: 10px;
     color: #606060;
 }
 main .product .productPage .item p img {
     width: 612px;
+}
+main .product .productPage .item .hoverImg img {
+    position: absolute; left: 0; top: 10px; display: none;
+}
+main .product .productPage .item:hover .hoverImg img {
+    display: block; 
 }
 main .product .productPage .item h2 {
     font-size: 1rem; color: #606060;

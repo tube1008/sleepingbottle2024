@@ -1,0 +1,20 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1299px){
+    main .sleepingStory .title {padding: 0 40px;}
+    main .sleepingStory .title #comments fieldset #text {width: 100%;}
+}
+@media screen and (max-width:1199px){
+
+}
+@media screen and (max-width: 1099px){
+
+}
+@media screen and (max-width: 999px){
+
+}
+@media screen and (max-width: 845px){
+
+}
+@media screen and (max-width:600px){
+}

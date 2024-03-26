@@ -1,0 +1,44 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width: 1199px){
+    main .storyPage .interview .item .info span {
+        font-size: 0.875rem; 
+    }
+}
+@media screen and (max-width: 999px){
+    main .storyPage .interview {
+    grid-template: 'item1 item2' 
+                    'item3 item4'
+                    'item5 item6'
+                    'item7 item8' 
+                    'item9 item10' ;
+    }
+    main .storyPage .interview .item .info span {
+        font-size: 1.1rem; 
+    }
+    main .storyPage .interview .item1 .info .name {position: absolute; left: 35%; top: 45%;}
+    main .storyPage .interview .item2 .info .name {position: absolute; left: 30%; top: 45%;} 
+    main .storyPage .interview .item3 .info .name {position: absolute; left: 30%; top: 45%;}
+    main .storyPage .interview .item4 .info .name {position: absolute; left: 33%; top: 45%;}
+    main .storyPage .interview .item5 .info .name {position: absolute; left: 27%; top: 45%;}
+    main .storyPage .interview .item6 .info .name {position: absolute; left: 25%; top: 45%;}
+    main .storyPage .interview .item7 .info .name {position: absolute; left: 27%; top: 45%;}
+    main .storyPage .interview .item8 .info .name {position: absolute; left: 35%; top: 45%;}
+    main .storyPage .interview .item9 .info .name {position: absolute; left: 30%; top: 45%;}
+    main .storyPage .interview .item10 .info .name {position: absolute; left: 35%; top: 45%;}
+}
+@media screen and (max-width: 799px){
+    main .storyPage .interview .item .info span {
+        font-size: 0.75rem; 
+    }
+    main .storyPage .interview .item1 .info .name {position: absolute; left: 35%; top: 45%;}
+    main .storyPage .interview .item2 .info .name {position: absolute; left: 30%; top: 45%;} 
+    main .storyPage .interview .item3 .info .name {position: absolute; left: 25%; top: 45%;}
+    main .storyPage .interview .item4 .info .name {position: absolute; left: 33%; top: 45%;}
+    main .storyPage .interview .item5 .info .name {position: absolute; left: 24%; top: 45%;}
+    main .storyPage .interview .item6 .info .name {position: absolute; left: 20%; top: 45%;}
+    main .storyPage .interview .item7 .info .name {position: absolute; left: 27%; top: 45%;}
+    main .storyPage .interview .item8 .info .name {position: absolute; left: 35%; top: 45%;}
+    main .storyPage .interview .item9 .info .name {position: absolute; left: 28%; top: 45%;}
+    main .storyPage .interview .item10 .info .name {position: absolute; left: 30%; top: 45%;}
+}

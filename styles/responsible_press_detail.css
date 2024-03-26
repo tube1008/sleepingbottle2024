@@ -1,0 +1,14 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1299px){
+    .summary {padding: 0 40px;}
+    main .pressDetailpage .summary .press .img {width: 200px;}
+    main .pressDetailpage #comments fieldset .txtArea #text {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px){
+
+}
+@media screen and (max-width:600px){
+}

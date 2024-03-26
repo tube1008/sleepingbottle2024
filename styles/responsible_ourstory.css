@@ -1,0 +1,7 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1000px){
+    main .ourStory .topPage .firstSubject .image .left{display: none;}
+}
+@media screen and (max-width:600px){
+}

@@ -90,7 +90,7 @@ main .sleepingStory .title .storyDetail {
 }
 main .sleepingStory .title .storyDetail p {}
 main .sleepingStory .title .storyDetail p img {
-    max-width: 1250px;
+    width: 100%;
     margin-bottom: 40px;
 }
 main .sleepingStory .title .storyDetail h3 {

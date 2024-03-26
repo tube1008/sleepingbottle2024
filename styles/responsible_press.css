@@ -1,0 +1,10 @@
+html * {transition: all 0.3s;}
+
+@media screen and (max-width:1299px){
+    .reportPage {padding: 0 40px;}
+}
+@media screen and (max-width:1000px){
+
+}
+@media screen and (max-width:600px){
+}

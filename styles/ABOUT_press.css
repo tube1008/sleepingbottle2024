@@ -19,7 +19,7 @@ main .pressPage .bg::before {
 main .pressPage .bg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: 230px;
+    position: relative; left: 10%;
 }
 main .pressPage .reportPage {
     margin: 0 auto;
